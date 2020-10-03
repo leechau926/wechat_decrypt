@@ -28,11 +28,12 @@ if __name__=='__main__':
 	# 修改dat文件的存放路径
     dat_path = r'F:\2020-06'
     
-    # 修改转换成png图片后的存放路径
+    # 修改转换成jpg图片后的存放路径
     target_path = r'G:\newfolder'
     
     # 修改加密的异或值
     # 异或值后两位=FF^加密文件第一个字节
+    # 用FF是因为jpg文件开头就是FF
     xor_value = 0x24
     
     findFile(dat_path)
